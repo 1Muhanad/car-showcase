@@ -1,4 +1,7 @@
-import { CustomFilter, SearchBar, CarCard, Hero } from "@/components";
+import CustomFilter from "@/components/CustomFilter";
+import SearchBar from "@/components/SearchBar";
+import CarCard from "@/components/CarCard";
+import Hero from "@/components/Hero";
 import { fetchCars } from "@/utils";
 
 export default async function Home() {
@@ -28,7 +31,34 @@ export default async function Home() {
           <section>
             <div className=" home__cars-wrapper">
               {allCars?.map((car) => (
-                <CarCard car={car} />
+                <CarCard
+                  key={`${car.make}-${car.model}-${car.year}`}
+                  car={car}
+                />
+              ))}
+              {allCars?.map((car) => (
+                <CarCard
+                  key={`${car.make}-${car.model}-${car.year}`}
+                  car={car}
+                />
+              ))}
+              {allCars?.map((car) => (
+                <CarCard
+                  key={`${car.make}-${car.model}-${car.year}`}
+                  car={car}
+                />
+              ))}
+              {allCars?.map((car) => (
+                <CarCard
+                  key={`${car.make}-${car.model}-${car.year}`}
+                  car={car}
+                />
+              ))}
+              {allCars?.map((car) => (
+                <CarCard
+                  key={`${car.make}-${car.model}-${car.year}`}
+                  car={car}
+                />
               ))}
             </div>
           </section>

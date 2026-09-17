@@ -6,6 +6,7 @@ import SearchBar from "./SearchBar";
 import CustomFilter from "./CustomFilter";
 import SearchMenuFacture from "./SearchMenuFacture";
 import CarCard from "./CarCard";
+
 export {
   Hero,
   CustomButton,

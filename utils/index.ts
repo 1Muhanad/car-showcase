@@ -1,3 +1,5 @@
+import { CarProps } from "@/types";
+
 const url = "https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=corolla";
 const options = {
   method: "GET",
@@ -31,3 +33,4 @@ export const calculateCarRent = (year: number) => {
 
   return rentalRatePerDay.toFixed(0);
 };
+export const generateCartImgUrl = (car: CarProps, angle?: String) => {};
